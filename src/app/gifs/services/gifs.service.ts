@@ -32,6 +32,7 @@ export class GifService {
         const gifs = GifMapper.mapGifphyItemsToGifArray(resp.data);
         this.trendingGifs.set(gifs);
         this.trendingGifsIsLoading.set(false);
+        console.log({ gifs });
       });
   }
 
